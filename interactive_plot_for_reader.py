@@ -26,9 +26,9 @@ for i in range(100):
     step = dict(
         method="update",
         args=[{"visible": [False]* 100},
-              {"title": "Slider switched to step: " + str(i)}],  # layout attribute
+              {"title": "Slider switched to step: " + str(i)}], 
     )
-    step["args"][0]["visible"][i] = True  # Toggle i'th trace to "visible"
+    step["args"][0]["visible"][i] = True
     steps.append(step)
 
 sliders = [dict(
